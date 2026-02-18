@@ -1,0 +1,80 @@
+{"input": "List files in the current directory", "target": "ls"}
+{"input": "List all files including hidden ones", "target": "ls -la"}
+{"input": "Show disk usage in human readable format", "target": "df -h"}
+{"input": "Display memory usage", "target": "free -h"}
+{"input": "Show running processes", "target": "ps aux"}
+{"input": "Show current working directory", "target": "pwd"}
+{"input": "Show active network connections", "target": "netstat -tulnp"}
+{"input": "Display listening ports", "target": "netstat -ltnp"}
+{"input": "Show IP address configuration", "target": "ip addr show"}
+{"input": "Display routing table", "target": "ip route"}
+{"input": "Show system uptime", "target": "uptime"}
+{"input": "Display current logged in users", "target": "who"}
+{"input": "Show last login history", "target": "last"}
+{"input": "Display CPU information", "target": "lscpu"}
+{"input": "Show block devices", "target": "lsblk"}
+{"input": "Check mounted filesystems", "target": "mount"}
+{"input": "Find files larger than 100MB", "target": "find . -type f -size +100M"}
+{"input": "Unzip archive data.zip", "target": "unzip data.zip"}
+{"input": "Show disk usage of current folder", "target": "du -sh ."}
+{"input": "Display environment variables", "target": "printenv"}
+{"input": "Show kernel version", "target": "uname -r"}
+{"input": "Show detailed system information", "target": "uname -a"}
+{"input": "Clear the terminal screen", "target": "clear"}
+{"input": "Show manual for ls command", "target": "man ls"}
+{"input": "Display processes in tree format", "target": "pstree"}
+{"input": "Kill process with PID 1234", "target": "kill 1234"}
+{"input": "Force kill process with PID 1234", "target": "kill -9 1234"}
+{"input": "Show open files", "target": "lsof"}
+{"input": "Display current date and time", "target": "date"}
+{"input": "Run script.sh", "target": "./script.sh"}
+{"input": "Show network interfaces", "target": "ip link show"}
+{"input": "Flush DNS cache using systemd", "target": "systemd-resolve --flush-caches"}
+{"input": "Restart networking service", "target": "systemctl restart networking"}
+{"input": "Start apache service", "target": "systemctl start apache2"}
+{"input": "Stop apache service", "target": "systemctl stop apache2"}
+{"input": "Enable ssh service at startup", "target": "systemctl enable ssh"}
+{"input": "Check status of ssh service", "target": "systemctl status ssh"}
+{"input": "Display active services", "target": "systemctl list-units --type=service"}
+{"input": "Show disk partitions", "target": "fdisk -l"}
+{"input": "Show network statistics", "target": "ss -tuln"}
+{"input": "Display ARP table", "target": "arp -a"}
+{"input": "List installed packages on Debian", "target": "dpkg -l"}
+{"input": "Update package list", "target": "apt update"}
+{"input": "Upgrade packages", "target": "apt upgrade -y"}
+{"input": "Install curl package", "target": "apt install curl -y"}
+{"input": "Remove curl package", "target": "apt remove curl -y"}
+{"input": "Search for package nginx", "target": "apt search nginx"}
+{"input": "Display top processes by CPU usage", "target": "top"}
+{"input": "Show real time process viewer", "target": "htop"}
+{"input": "List USB devices", "target": "lsusb"}
+{"input": "List PCI devices", "target": "lspci"}
+{"input": "Show disk I/O statistics", "target": "iostat"}
+{"input": "Monitor system activity", "target": "vmstat"}
+{"input": "Show groups of current user", "target": "groups"}
+{"input": "Display current user name", "target": "whoami"}
+{"input": "Switch to user root", "target": "su root"}
+{"input": "Execute command as root", "target": "sudo ls"}
+{"input": "Show cron jobs", "target": "crontab -l"}
+{"input": "Edit cron jobs", "target": "crontab -e"}
+{"input": "List background jobs", "target": "jobs"}
+{"input": "Bring job 1 to foreground", "target": "fg %1"}
+{"input": "Check disk health using smartctl", "target": "smartctl -a /dev/sda"}
+{"input": "Show firewall status using ufw", "target": "ufw status"}
+{"input": "Enable ufw firewall", "target": "ufw enable"}
+{"input": "Disable ufw firewall", "target": "ufw disable"}
+{"input": "Allow incoming SSH connections in ufw", "target": "ufw allow ssh"}
+{"input": "Deny incoming HTTP connections in ufw", "target": "ufw deny http"}
+{"input": "Display system logs using journalctl", "target": "journalctl -xe"}
+{"input": "Search for error messages in syslog", "target": "grep 'error' /var/log/syslog"}
+{"input": "Show disk usage of home directory", "target": "du -sh ~/"}
+{"input": "Search for updates in the system", "target": "apt list --upgradable"}
+{"input": "Show current system load", "target": "uptime"}
+{"input": "Display CPU usage in real time", "target": "top -b -n1 | grep 'Cpu(s)'"}
+{"input": "Show memory usage in real time", "target": "free -m"}
+{"input": "List all open network ports", "target": "netstat -tuln"}
+{"input": "Show current disk space usage", "target": "df -h"}
+{"input": "Display running processes with high memory usage", "target": "ps aux --sort=-%mem | head"}
+{"input": "Show current system time zone", "target": "timedatectl | grep 'Time zone'"}
+{"input": "Set system time zone to UTC", "target": "timedatectl set-timezone UTC"}
+{"input": "Update system packages", "target": "apt update && apt upgrade -y"}
