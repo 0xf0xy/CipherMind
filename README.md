@@ -24,8 +24,8 @@ Built for experimentation and controlled environments.
 
 ## > Install
 
-```bash
-This project is not yet available as a package.
+```
+This project is not yet available as a package, as it is still in the early stages of development. To use it, clone the repository and run the "inference.py" script.
 ```
 
 
