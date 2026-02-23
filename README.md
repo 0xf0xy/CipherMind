@@ -47,4 +47,3 @@ Any misuse is your responsibility.
   <a href="https://github.com/0xf0xy"><b>0xf0xy</b></a> • 
   <a href="./LICENSE"><b>MIT License</b></a>
 </p>
-
