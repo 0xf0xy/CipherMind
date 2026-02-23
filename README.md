@@ -1,33 +1,45 @@
 <h1 align="center">RAVEN</h1>
-<p align="center"><em>command synthesis from intent</em>
+<p align="center">
+  <em>command synthesis from intent</em>
 </p>
 
 <p align="center">
-  <a href="https://www.python.org/"><img src="https://img.shields.io/badge/python-3.10+-3776AB?style=flat&logo=python&logoColor=white"/></a>
-  <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/license-MIT-3DA639?style=flat"/></a>
+  <img src="https://img.shields.io/badge/status-experimental-purple?style=flat"/>
+  <img src="https://img.shields.io/badge/version-0.1.0-2B2B2B?style=flat"/>
+  <img src="https://img.shields.io/badge/python-3.10+-3776AB?style=flat&logo=python&logoColor=white"/>
+  <img src="https://img.shields.io/badge/license-MIT-3DA639?style=flat"/>
 </p>
 
-<br>
-
-## > About
-
-**Raven** translates natural language instructions into executable Debian-Based Linux commands.
-
-It is designed to:
-- interpret task-oriented input
-- generate syntactically correct terminal commands
-- streamline command-line workflows
-
-Built for experimentation and controlled environments.
+---
 
 <br>
 
-## > Install
+## > Overview
 
-```
-This project is not yet available as a package, as it is still in the early stages of development. To use it, clone the repository and run the "inference.py" script.
-```
+**Raven** is an experimental command synthesis engine that converts natural language instructions into executable Debian-based Linux commands.
 
+It combines probabilistic intent classification (Naive Bayes) with regex-based pattern resolution to map user intent into structured terminal operations.
+
+Designed for controlled environments, automation research, and command-line workflow experimentation.
+
+<br>
+
+## > Features
+
+- Probabilistic intent classification
+- Regex-based pattern resolution
+- Debian-compatible command synthesis
+
+<br>
+
+## > Installation
+
+```bash
+git clone https://github.com/0xf0xy/Raven
+cd Raven
+pip install .
+raven -h
+```
 
 <br>
 
@@ -38,8 +50,9 @@ Any misuse is your responsibility.
 
 <br>
 
-___
+---
+
 <p align="center">
-  <a href="https://github.com/0xf0xy" target="_blank"><b>0xf0xy</b></a> • 
-  <a href="./LICENSE"><b>MIT</b></a>
+  <a href="https://github.com/0xf0xy"><b>0xf0xy</b></a> • 
+  <a href="./LICENSE"><b>MIT License</b></a>
 </p>
