@@ -28,7 +28,7 @@ Designed for controlled environments, automation research, and command-line work
 ```bash
 git clone https://github.com/0xf0xy/Raven
 cd Raven
-pip install .
+sudo pip install .
 raven -h
 ```
 
@@ -47,3 +47,4 @@ Any misuse is your responsibility.
   <a href="https://github.com/0xf0xy"><b>0xf0xy</b></a> • 
   <a href="./LICENSE"><b>MIT License</b></a>
 </p>
+
