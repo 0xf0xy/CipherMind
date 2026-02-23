@@ -1,0 +1,121 @@
+{
+    "file_operations": [
+        {
+            "action": "delete_extension",
+            "keywords": [
+                "delete"
+            ],
+            "regex": "delete\\s+all\\s+\\.?(\\w+)\\s+files",
+            "template": "rm *.{0}"
+        },
+        {
+            "action": "remove",
+            "keywords": [
+                "remove",
+                "delete"
+            ],
+            "regex": "(?:remove|delete)\\s+(?:this\\s+)?(?:file\\s+)?([\\w./-]+)",
+            "template": "rm {0}"
+        },
+        {
+            "action": "rename",
+            "keywords": [
+                "rename"
+            ],
+            "regex": "rename\\s+(?:this\\s+)?(?:file\\s+)?([\\w./-]+)\\s+(?:to|as)\\s+([\\w./-]+)",
+            "template": "mv {0} {1}"
+        },
+        {
+            "action": "copy",
+            "keywords": [
+                "copy"
+            ],
+            "regex": "copy\\s+(?:this\\s+)?(?:file\\s+)?([\\w./-]+)\\s+to\\s+([\\w./-]+)",
+            "template": "cp {0} {1}"
+        },
+        {
+            "action": "create_file_blank",
+            "keywords": [
+                "create",
+                "file"
+            ],
+            "regex": "create\\s+(?:a\\s+new\\s+)?(?:empty\\s+)?file$",
+            "template": "touch"
+        },
+        {
+            "action": "create_file",
+            "keywords": [
+                "create",
+                "file"
+            ],
+            "regex": "create\\s+(?:a\\s+new\\s+)?(?:empty\\s+)?(?:file\\s+)?([\\w./-]+)",
+            "template": "touch {0}"
+        },
+        {
+            "action": "list",
+            "keywords": [
+                "list",
+                "files"
+            ],
+            "regex": "(?:list|show)\\s+files(?:\\s+in\\s+(?:this|current)\\s+(?:folder|directory))?",
+            "template": "ls"
+        },
+        {
+            "action": "list_hidden",
+            "keywords": [
+                "show",
+                "hidden",
+                "files"
+            ],
+            "regex": "(?:show|list)\\s+(?:all\\s+)?hidden\\s+files",
+            "template": "ls -a"
+        }
+    ],
+    "network_operations": [
+        {
+            "action": "ping",
+            "keywords": [
+                "ping"
+            ],
+            "regex": "ping\\s+(?:to\\s+)?{TARGET}",
+            "template": "ping {0}"
+        },
+        {
+            "action": "scan_ports",
+            "keywords": [
+                "scan"
+            ],
+            "regex": "scan\\s+(?:ports\\s+)?(?:of\\s+)?{TARGET}",
+            "template": "nmap {0}"
+        },
+        {
+            "action": "traceroute",
+            "keywords": [
+                "traceroute",
+                "trace"
+            ],
+            "regex": "(?:traceroute|trace\\s+route)\\s+(?:to\\s+|for\\s+)?{TARGET}",
+            "template": "traceroute {0}"
+        }
+    ],
+    "process_management": [
+        {
+            "action": "kill",
+            "keywords": [
+                "kill",
+                "process"
+            ],
+            "regex": "kill\\s+(?:process\\s+)?(\\d+)",
+            "template": "kill {0}"
+        },
+        {
+            "action": "list_processes",
+            "keywords": [
+                "list",
+                "processes"
+            ],
+            "regex": "list .*? processes",
+            "template": "ps aux"
+        }
+    ]
+}

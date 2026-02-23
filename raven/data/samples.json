@@ -1,0 +1,74 @@
+{
+    "file_operations": [
+        "list files in this folder",
+        "show hidden files in current directory",
+        "delete all .log files",
+        "copy file to another directory",
+        "move file to backup folder",
+        "rename file test.txt",
+        "create a new empty file",
+        "search for files named config",
+        "compress this folder to zip",
+        "decompress tar.gz file"
+    ],
+    "network_operations": [
+        "ping this ip",
+        "scan ports of 192.168.0.10",
+        "view open connections",
+        "discover active hosts on the network",
+        "perform traceroute to google.com",
+        "download file via wget",
+        "resolve dns for a domain",
+        "view network interfaces",
+        "activate monitor mode on wlan0 interface",
+        "capture network packets"
+    ],
+    "process_management": [
+        "list running processes",
+        "kill process by pid",
+        "view cpu usage",
+        "view memory consumption",
+        "run program in background",
+        "search process by name",
+        "pause a process",
+        "resume paused process",
+        "view process tree",
+        "monitor processes in real time"
+    ],
+    "system_information": [
+        "view kernel version",
+        "show system information",
+        "view disk space",
+        "show memory usage",
+        "view system uptime",
+        "list connected devices",
+        "view disk partitions",
+        "show environment variables",
+        "view system architecture",
+        "query current date and time"
+    ],
+    "service_management": [
+        "start apache service",
+        "stop mysql service",
+        "restart nginx service",
+        "view service status",
+        "enable service on boot",
+        "disable service on boot",
+        "list active services",
+        "view service logs",
+        "reload service configuration",
+        "force stop a service"
+    ],
+    "user_management": [
+        "create new user",
+        "delete user",
+        "change user password",
+        "add user to sudo group",
+        "list system users",
+        "view user groups",
+        "lock user account",
+        "unlock user account",
+        "switch current user",
+        "view logged in user"
+    ]
+}
