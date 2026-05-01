@@ -77,7 +77,7 @@
             "keywords": [
                 "ping"
             ],
-            "regex": "ping\\s+(?:to\\s+)?{TARGET}",
+            "regex": "ping\\s+(?:this\\s+(?:domain\\s+|ip\\s+)?|to\\s+)?{TARGET}",
             "template": "ping {0}"
         },
         {

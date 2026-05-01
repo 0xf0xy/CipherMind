@@ -22,10 +22,11 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 """
 
+import subprocess
 import json
 import re
+import os
 
-BLACK = "\033[1;30m"
 RED = "\033[1;31m"
 GREEN = "\033[1;32m"
 YELLOW = "\033[1;33m"
@@ -111,3 +112,42 @@ class Raven:
                 return None
 
         return None
+
+    def synthesize(self, user_input: str, run: bool = False) -> None:
+        """
+        Synthesize a command from user input by trying all available intents.
+
+        Args:
+            user_input (str): The user's natural language input
+            run (bool): Whether to execute the command after synthesis (default: False)
+
+        Returns:
+            None: This method does not return a value, it either prints the synthesized command or executes it.
+        """
+        os.system("clear")
+
+        for intent in self.patterns:
+            command = self.get_command(intent, user_input)
+
+            if command:
+                if run:
+                    print(f"Executing → {GREEN}{command}{RESET}")
+                    print("─" * 50 + "\n")
+
+                    try:
+                        result = subprocess.run(command, shell=True)
+
+                        if result.returncode != 0:
+                            print(
+                                f"\n[{RED}x{RESET}] Command failed with exit code {result.returncode}"
+                            )
+
+                    except Exception as e:
+                        print(f"[{RED}x{RESET}] Failed to execute: {e}")
+
+                else:
+                    print(f"Synthesized command → {GREEN}{command}{RESET}")
+
+                return
+
+        print(f"[{RED}x{RESET}] No matching command found for: {user_input}")
