@@ -66,7 +66,3 @@ def main():
     raven = Raven()
     user_input = " ".join(args.input)
     raven.synthesize(user_input, run=args.run)
-
-
-if __name__ == "__main__":
-    main()
